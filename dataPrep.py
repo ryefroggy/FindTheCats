@@ -10,9 +10,9 @@ except (AttributeError, OSError):
     ctypes.windll.user32.SetProcessDPIAware()
 
 RESULT_SIZE = (320, 320)
-SOURCE_tDir = "downloads"
+SOURCE_DIR = "downloads"
 
-RESULT_tDir = "processedData"
+RESULT_DIR = "processedData"
 
 absImageCount = 0
 
@@ -29,7 +29,7 @@ def processDir(tDir, progressMarkers = 20):
             continue
 
         absImageCount += 1
-        rpath = "{}/{}.jpg".format(RESULT_tDir, "%05d" % absImageCount)
+        rpath = "{}/{}.jpg".format(RESULT_DIR, "%05d" % absImageCount)
         template = PIL.Image.new("RGB", RESULT_SIZE, (0, 0, 0))
 
         try:
@@ -51,14 +51,14 @@ def processDir(tDir, progressMarkers = 20):
     return count
 
 if __name__ == '__main__':
-    if(not os.path.isdir(SOURCE_tDir)):
-        print("NO SOURCE tDirECTORY FOUND WITH NAME: {}".format(SOURCE_tDir))
-    if(not os.path.isdir(RESULT_tDir)):
-        print("OUTPUT tDirECTORY MADE: {}".format(RESULT_tDir))
-        os.maketDirs(RESULT_tDir)
+    if(not os.path.isdir(SOURCE_DIR)):
+        print("NO SOURCE DIRECTORY FOUND WITH NAME: {}".format(SOURCE_DIR))
+    if(not os.path.isdir(RESULT_DIR)):
+        print("OUTPUT DIRECTORY MADE: {}".format(RESULT_DIR))
+        os.makedirs(RESULT_DIR)
 
-    for subdir in os.listdir(SOURCE_tDir):
-        subpath = "{}/{}".format(SOURCE_tDir, subdir)
+    for subdir in os.listdir(SOURCE_DIR):
+        subpath = "{}/{}".format(SOURCE_DIR, subdir)
         print("{} :: {}".format(subpath, os.path.isdir(subpath)))
 
         processedCount = processDir(subpath)
