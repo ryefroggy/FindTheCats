@@ -1,0 +1,1 @@
+./darknet detector train cfg/cats.data cfg/cats-voc.cfg darknet53.conv.74
