@@ -3,9 +3,7 @@
 *.csv
 *.out
 *.png
-*.jpg
-*.pyc
-old/
+*.so
 mnist/
 data/
 caffe/
@@ -16,6 +14,7 @@ convnet/
 decaf/
 submission/
 cfg/
+darknet
 .fuse*
 
 # OS Generated #
@@ -24,3 +23,7 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.swp
+
+# CMake #
+cmake-build-debug/
+CMakeLists.txt

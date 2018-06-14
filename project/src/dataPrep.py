@@ -10,9 +10,9 @@ except (AttributeError, OSError):
     ctypes.windll.user32.SetProcessDPIAware()
 
 RESULT_SIZE = (320, 320)
-SOURCE_DIR = "downloads"
+SOURCE_DIR = "../../downloads"
 
-RESULT_DIR = "processedData"
+RESULT_DIR = "../../processedData"
 
 PROCESSING_FILE = "preProcessedDataLog.txt"
 
