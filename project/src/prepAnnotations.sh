@@ -1,1 +1,1 @@
-cp -r ../processedData ../annotations
+cp ../../processedData/* ../../annotations/
