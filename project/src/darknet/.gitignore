@@ -14,7 +14,7 @@ convnet/
 decaf/
 submission/
 cfg/
-darknet
+backup
 .fuse*
 
 # OS Generated #
