@@ -1,0 +1,9 @@
+Total BFLOPS 65.290 
+
+ seen 32 
+detections_count = 43, unique_truth_count = 13  
+ rank = 0 of ranks = 43 class_id = 0, name = cat, 	 ap = 96.78 % 
+ for thresh = 0.25, precision = 0.92, recall = 0.92, F1-score = 0.92 
+ for thresh = 0.25, TP = 12, FP = 1, FN = 1, average IoU = 72.58 % 
+
+ mean average precision (mAP) = 0.967754, or 96.78 % 
